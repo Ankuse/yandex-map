@@ -22,7 +22,7 @@ foreach ($res as $re) {
 	$ar_res = CIBlockElement::GetProperty($re['IBLOCK_ID'], $re['ID']);
 	debug($re);
 	debug($ar_res);
-}
-
-require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
+}?>
+qweqwe
+<?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>
