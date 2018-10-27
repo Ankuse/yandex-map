@@ -1,0 +1,8 @@
+/bitrix/
+/vendor/
+/composer.phar
+/.idea/
+.idea/httpRequests/
+.idea/inspectionProfiles/
+.idea/vcs.xml
+.idea/workspace.xml
