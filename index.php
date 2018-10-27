@@ -23,6 +23,6 @@ foreach ($res as $re) {
 	//debug($re);
 	//debug($ar_res);
 }?>
-NashyGrupp branch
+New.Nashy
 <?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>
