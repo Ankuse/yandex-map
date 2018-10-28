@@ -31,6 +31,6 @@ $assets = \Bitrix\Main\Page\Asset::getInstance();
 
 <div class='container'>
 	<div class='row'>
-		qweqwe
+		qweqweqwe
 	</div>
 </div>
