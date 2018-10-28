@@ -9,7 +9,6 @@ $(document).ready(function () {
     });
 
     function toggleClass(jqueryelem) {
-        console.log(jqueryelem);
         var elem = $(jqueryelem);
         if(elem.hasClass('active')) {
             elem.removeClass('active');
@@ -28,17 +27,13 @@ $(document).ready(function () {
     });
     $('.navigation-tab_select').hover(function () {
         $(this).toggleClass('active');
-        //console.log($('.navigation-tab_select').find('active'));
         var select_tab = $(this).data('tab_select');
-        console.log(select_tab);
-        console.log($(`.navigation-tab[data-tab="${select_tab}"]`));
         showMenu($(`.navigation-tab[data-tab="${select_tab}"]`));
     });
 
     function showMenu(elem) {
         var elem = $(elem);
         var allhide = $('.navigation-tab[data-tab]');
-        console.log('allhide', allhide);
         allhide.hide();
         elem.show();
     }
