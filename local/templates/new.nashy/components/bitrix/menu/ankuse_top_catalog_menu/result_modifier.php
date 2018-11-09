@@ -57,7 +57,6 @@ function getId($ID) {
 					<?getIdSections($ar_result['ID'])?>
 				</div>
 			<?}?>
-			</ul>
 		</div>
 	</div>
 <?}?>

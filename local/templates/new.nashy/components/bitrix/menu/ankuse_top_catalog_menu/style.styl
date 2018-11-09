@@ -19,6 +19,8 @@ img
 .navigation-main
   width: 100%
 
+
+  
 .navigation_list
   margin: 0;
   padding: 0;
@@ -47,7 +49,11 @@ img
     width: 100%;
 
 
-
+.arrow_right_parent
+  background-image: url(./image/right-arrow-blue.svg);
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  background-size: auto 10px;
 .navigation-container_left
   background-color: #fff;
   border-right: 1px solid #e8e8e8;
@@ -66,10 +72,6 @@ img
       list-style: none;
       line-height: 1;
       padding: 10px 32px;
-      background-image: url(image/arrow-right.svg);
-      background-position: right 15px center;
-      background-repeat: no-repeat;
-      background-size: auto 10px;
       span
         color: #151b23;
         font-size: 14px;
@@ -77,6 +79,7 @@ img
 
 
 .navigation-container
+  display none
   &_mid
     padding: 0;
     position: relative;
@@ -94,9 +97,14 @@ img
     top: 0;
   &_left
     ul
-      li
-        &:hover
-          background: #0687ca
+      .active
+        background: #0687ca
+        background-image: url(./image/right-arrow-white.svg);
+        background-position: right 15px center;
+        background-repeat: no-repeat;
+        background-size: auto 10px;
+        span
+          color #fff
 .navigation-center
   &_tab
     padding: 15px 5px;
@@ -140,7 +148,7 @@ img
     float: left;
     padding: 0 0 0 15px;
     li
-      padding: 0 0 20px;
+      padding: 0 0 15px;
       line-height: 1;
       margin: 0;
       display: block;

@@ -26,6 +26,7 @@ $assets = \Bitrix\Main\Page\Asset::getInstance();
 	?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<!--<link rel="stylesheet" href="<?/*=SITE_TEMPLATE_PATH . '/vendor/angular/styles.56cffe78f28a12ba56e2.css'*/?>">-->
 </head>
 <body>
 <div id="panel">
@@ -33,7 +34,7 @@ $assets = \Bitrix\Main\Page\Asset::getInstance();
 </div>
 
 <div class='container'>
-	<div class='row'>
+	<div class='row position-relative z-index100'>
 
 		<div class='top-navigation'>
 			<ul class="navigation_list d-flex flex-row flex-wrap justify-content-between align-items-center">
@@ -78,13 +79,13 @@ $assets = \Bitrix\Main\Page\Asset::getInstance();
 			</ul>
 		</div>
 
-		<div class="navigation-main">
+		<div class="navigation-main position-absolute z-index100" style='top:57px'>
 			<div class="navigation-main_back"></div>
 			<div class="container navigation-container">
 				<div class="row">
 				<?$APPLICATION->IncludeComponent(
 					"bitrix:menu",
-					"ankuse_top_catalog_manu",
+					"ankuse_top_catalog_menu",
 					array(
 					"ALLOW_MULTI_SELECT" => "N",
 					"CHILD_MENU_TYPE" => "",
@@ -102,11 +103,17 @@ $assets = \Bitrix\Main\Page\Asset::getInstance();
 					"USE_EXT" => "Y",
 					"COMPONENT_TEMPLATE" => "vertical_multilevel1"
 					),
-	  false
+					false
 				);?>
 				</div>
-
 			</div>
 		</div>
 	</div>
 </div>
+
+<?/**
+ * Открываем container and row и закрываем в footer.php
+ *
+ */?>
+<div class='container'>
+	<div class='row'>
