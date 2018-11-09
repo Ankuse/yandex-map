@@ -7,13 +7,15 @@
 			<?foreach($arResult as $arItem){?>
 				<?if ($arItem["IS_PARENT"]){?>
 					<?if ($arItem["DEPTH_LEVEL"] == 1){?>
-						<li class="navigation-tab_select" data-tab_select="<?=$arItem['TEXT']?>">
+						<li class="navigation-tab_select arrow_right_parent"
+							data-tab_select="<?=$arItem['TEXT']?>">
 							<span><?=$arItem['TEXT']?></span>
 						</li>
 					<?}?>
 				<?} else {?>
 					<?if ($arItem["DEPTH_LEVEL"] == 1){?>
-						<li class="navigation-tab_select" data-tab_select="<?=$arItem['TEXT']?>">
+						<li class="navigation-tab_select"
+							data-tab_select="<?=$arItem['TEXT']?>">
 							<span><?=$arItem['TEXT']?></span>
 						</li>
 					<?}?>
